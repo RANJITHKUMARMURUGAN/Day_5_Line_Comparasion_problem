@@ -26,5 +26,14 @@ public class Line_comparison {
 		y2=scan.nextDouble();
 		length_of_line_2=Math.sqrt((Math.pow((x2-x1),2)) + (Math.pow((y2-y1),2)) );
 		System.out.println("Length of the Line one : "+" "+length_of_line_2);
+
+		String str1,str2;
+		str1=Double.toString(length_of_line_1);
+		str2=Double.toString(length_of_line_2);
+		
+		
+		System.out.println("Equality of two line using equal method "+" "+ str1.equals(str2));
+		System.out.println("compare of two length is "+" "+str1.compareTo(str2));
+
 	}
 }
